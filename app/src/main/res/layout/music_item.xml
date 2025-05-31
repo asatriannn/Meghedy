@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/music_bg"
+    android:padding="10dp"
+    android:layout_marginVertical="6dp">
+
+    <!-- Album Art -->
+    <ImageView
+        android:id="@+id/cover_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/music_default_bg"
+        android:scaleType="centerCrop"
+        android:background="@drawable/img_bg"
+        android:clipToOutline="true" />
+
+    <!-- Title and Artist -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cover_img"
+        android:layout_toStartOf="@+id/heart_icon"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teenage dream"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olivia Rodrigo"
+            android:textColor="#DDDDDD"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Heart Icon -->
+    <ImageView
+        android:id="@+id/heart_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/unliked_ic" />
+
+</RelativeLayout>
